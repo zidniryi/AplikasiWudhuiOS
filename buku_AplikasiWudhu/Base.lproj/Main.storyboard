@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="buku_AplikasiWudhu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WudhuWalpaper" translatesAutoresizingMaskIntoConstraints="NO" id="aag-m0-hyM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8Y-nM-B85">
+                                <rect key="frame" x="56" y="329" width="263" height="53"/>
+                                <color key="backgroundColor" red="0.35820202806450652" green="0.85240505544838585" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="npN-Ns-ZXs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="tintColor" red="0.96318339799813135" green="1" blue="0.94819313573820041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Mulai"/>
+                                <connections>
+                                    <segue destination="D3Q-jl-CDf" kind="show" id="6o2-cL-ccl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aplikasi E-Wudhu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdN-pu-RIG">
+                                <rect key="frame" x="66" y="209" width="243" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="naP-Tp-JPp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.6280093267837481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j8Y-nM-B85" secondAttribute="bottom" constant="285" id="4tW-0U-D3N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j8Y-nM-B85" secondAttribute="trailing" constant="56" id="5Ha-Fv-HOd"/>
+                            <constraint firstItem="aag-m0-hyM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IVT-oL-qfa"/>
+                            <constraint firstItem="QdN-pu-RIG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="189" id="Jgb-dK-e5e"/>
+                            <constraint firstItem="j8Y-nM-B85" firstAttribute="top" secondItem="QdN-pu-RIG" secondAttribute="bottom" constant="63" id="LB0-9P-3JA"/>
+                            <constraint firstItem="QdN-pu-RIG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="Sta-B1-z8v"/>
+                            <constraint firstItem="aag-m0-hyM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dSq-Ir-iLN"/>
+                            <constraint firstAttribute="bottom" secondItem="aag-m0-hyM" secondAttribute="bottom" id="e3V-Aq-zgW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QdN-pu-RIG" secondAttribute="trailing" constant="66" id="ed0-TA-Tdc"/>
+                            <constraint firstItem="aag-m0-hyM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hBe-hY-aw7"/>
+                            <constraint firstItem="j8Y-nM-B85" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="rVt-2A-MeM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="53"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XqF-Nd-TiI">
+            <objects>
+                <viewController id="D3Q-jl-CDf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BCS-g4-OR7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wudhu-1" translatesAutoresizingMaskIntoConstraints="NO" id="6n5-Il-29e">
+                                <rect key="frame" x="0.0" y="76" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B43-4Q-jqp">
+                                <rect key="frame" x="16" y="297" width="343" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">1. Mencuci kedua telapak tangan sebanyak tiga kali;
+
+Dengan gerakan menyeka pada sela-sela jari telapak tangan yang dimulai dari tangan kanan kemudian tangan kiri kemudian diriringi dengan membaca doa:
+
+اَلْحَمْدُ ِللهِ الَّذِي جَعَلَ اْلمَاءَ طَهُوْرًا
+
+ 
+
+“Allhamdulillahilaziy ja’alal ma’a tohuro.”
+
+Artinya :
+
+“Dengan nama Allah yang Maha Pemurah Lagi Maha Penyayang. Segala Puji bagi Allah yang menjadikan air itu suci.”</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUz-Cx-dw8">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bjz-PA-Bj8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZ4-FF-FjA">
+                                <rect key="frame" x="302" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="j46-aR-YxZ" kind="show" id="HXu-cW-vJg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98355984399999996" blue="0.95205866120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="wDH-7E-iIT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8e-yG-288" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="73"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="33r-SI-3ee">
+            <objects>
+                <viewController id="j46-aR-YxZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mvn-v0-Xqj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wudhu-2" translatesAutoresizingMaskIntoConstraints="NO" id="kn6-yZ-Ilh">
+                                <rect key="frame" x="0.0" y="76" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q2s-fa-Heh">
+                                <rect key="frame" x="16" y="297" width="343" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">2. Berkumur ;
+
+Berkumur sebanyak 3 kali, dengan gerakan utuh membersihkan mulut (bahkan dari sisa-sisa makanan yang masih ada pada mulut).(Baca : Sikat Gigi Saat Puasa, Hukum Menyikat Gigi Saat Puasa)
+
+ 
+
+اللَّهُمَّ اَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ
+
+ 
+
+“Allahumma aini alay dzikrika wasukrika wahusni ibadatika.”
+
+Artinya :
+
+“Ya Allah, bantulah aku supaya aku dapat berzikir kepadaMu, dan bersyukur kepadaMu, dan perelok ibadah kepadaMu.”</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQ9-5b-MWj">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="D3Q-jl-CDf" kind="show" id="nic-gA-1lz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9m-9x-3E1">
+                                <rect key="frame" x="302" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="Efr-0g-nQw" kind="show" id="GmW-tH-jnh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98355984399999996" blue="0.95205866120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="spp-yM-oe9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjS-5I-UzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1988" y="74"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MWf-a0-fWK">
+            <objects>
+                <viewController id="eoM-aU-mK3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jaj-5e-Hpd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wudhu-4" translatesAutoresizingMaskIntoConstraints="NO" id="2K7-ha-X0v">
+                                <rect key="frame" x="0.0" y="76" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GRz-W3-sam">
+                                <rect key="frame" x="16" y="297" width="343" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">4. Membasuh Muka ; 
+
+Membasuh seluruh permukaan wajah dengan rata, sebanyak 3 kali gerakan memutar sekeliling wajah.
+
+ 
+
+اَللَّهُمَّ بَيِّضْ وَجْهِى يَوْمَ تَبْيَضُّ وُجُوْهٌ وَتَسْوَدُّ وُجُوْهٌ
+
+ 
+
+“Allahuma bayadh wajhi yawmatabyaht wujudhu wataswadu wujdhu.”
+
+Artinya :
+
+“Ya Allah, putihkanlah wajahku pada hari putihnya wajah-wajah dan hitamnya wajah-wajah.”</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppq-jv-S4c">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="Efr-0g-nQw" kind="show" id="3Xn-ee-l8V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPC-NN-tkl">
+                                <rect key="frame" x="302" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="twl-T1-0bf" kind="show" id="jBO-e3-3HG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98355984399999996" blue="0.95205866120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ge0-Hd-U3c"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wna-0r-pFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826" y="908"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vZe-ic-bOZ">
+            <objects>
+                <viewController id="twl-T1-0bf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GSc-7B-nad">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wudhu-5" translatesAutoresizingMaskIntoConstraints="NO" id="f8z-0G-96k">
+                                <rect key="frame" x="0.0" y="76" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TJv-oJ-xCt">
+                                <rect key="frame" x="16" y="297" width="343" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">5. Membasuh kedua tangan 
+
+Membasuh kedua tangan hingga mencapai siku, sebanyak 3 kali gerakan memutar dan menyeluruh ke permukaan tangan.
+
+Tangan kanan
+اَللَّهُمَّ اَعْطِنِى كِتاَبِى بِيَمِيْنِى وَحَاسِبْنِى حِسَاباً يَسِيْرًا
+
+“Allahumma a’tini kitabiy biyamiyni wahasibni hisaban yasiyron.”
+
+Artinya :
+
+“Ya Allah! berikanlah kepadaku kitabku dari sebelah kanan dan hitunglah amalanku dengan perhitungan yang mudah.”
+
+Tangan kiri
+اَللَّهُمَّ لاَ تُعْطِنِى كِتاَبِى مِنْ يَساَرِىْ وَ لاَ مِنْ وَرَاءِ ظَهْرِىْ
+
+“Allahumma latu’tini kitabi minyasariy wala minwaro’i tohriy.”
+
+Artinya :
+
+“Ya Allah! aku berlindung denganMu dari menerima kitab amalanku dari sebelah kiri atau dari sebelah belakang.”</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPS-XA-WXp">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="eoM-aU-mK3" kind="show" id="ES9-wg-yUA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwd-TP-boB">
+                                <rect key="frame" x="302" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="9Dp-2y-G41" kind="show" id="gtP-Bf-1cX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98355984399999996" blue="0.95205866120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="K0k-iI-Ofr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWv-4M-IFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1633" y="843"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xp5-gm-8xR">
+            <objects>
+                <viewController id="9Dp-2y-G41" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nkx-bb-A8c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wudhu-6" translatesAutoresizingMaskIntoConstraints="NO" id="of9-qq-R26">
+                                <rect key="frame" x="0.0" y="76" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8wx-ss-z4b">
+                                <rect key="frame" x="16" y="297" width="343" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">6.  Membasuh kepala mulai dari ubun-ubun ;
+
+Membasuh kening hingga ujung kening (ubun-ubun) sampai sebagian kepala, sebanyak 3 kali gerakan menyeluruh.
+
+ 
+
+اَللَّهُمَّ حَرِّمْ شَعْرِيْ وَبَشَرِيْ عَلَى النَّارِ
+
+ 
+
+“Allahumma harom sa’riy wabasariy a’la nnari.”
+
+Artinya :
+
+“Ya Allah, haramkan rambutku dan kulit kepalaku dari pada neraka.”</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSe-Gq-71h">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="twl-T1-0bf" kind="show" id="qx5-SW-AVJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMc-TZ-u9S">
+                                <rect key="frame" x="302" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="pVv-vU-ty8" kind="show" id="BQv-VF-8Yw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98355984399999996" blue="0.95205866120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Xdx-Ii-wBo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W9F-km-ToJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572" y="820"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GiZ-V1-kZY">
+            <objects>
+                <viewController id="Efr-0g-nQw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mlq-cz-CNn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wudhu-3" translatesAutoresizingMaskIntoConstraints="NO" id="K6y-da-ywh">
+                                <rect key="frame" x="0.0" y="76" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bWl-iW-btc">
+                                <rect key="frame" x="16" y="297" width="343" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">3. Membasuh hidung ;
+
+Membasuh lubang hidung secara menyeluruh, sebanyak 3 kali gerakan.
+
+ 
+
+اَللَّهُمَّ أَرِحْنِي رَائِحَة الجَـنَّةْ
+
+ 
+
+“Allahuma arihniy roihata janat.”
+
+Artinya :
+
+“Ya Allah, berilah aku ciuman daripada haruman bau Syurga.” </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzX-qP-Xso">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="j46-aR-YxZ" kind="show" id="ssV-Ya-B98"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7w-dG-WiU">
+                                <rect key="frame" x="302" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="eoM-aU-mK3" kind="show" id="4yV-gt-NIf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98355984399999996" blue="0.95205866120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="TQx-b9-ZP8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jce-Gu-Wgq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2991" y="90"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Dtr-Q6-gXv">
+            <objects>
+                <viewController id="pVv-vU-ty8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0dV-WE-dF1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wudhu-7" translatesAutoresizingMaskIntoConstraints="NO" id="aKl-Zo-vvM">
+                                <rect key="frame" x="0.0" y="76" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fHS-EN-Ibp">
+                                <rect key="frame" x="16" y="297" width="343" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">7. Membasuh keduan telinga ;
+
+Membasuh kedua tengila baik itu bagian dalam maupun luar telinga (daun telinga) hingga menyeluruh ke bagian telinga, sebanyak 3 kali gerakan.
+
+ 
+
+اَللَّهُمَّ اجْعَلْنِي مِنَ الَّذِيْنَ يَسْتَمِعُوْنَ اْلقَوْلَ فَيَتَّبِعُوْنَ أَحْسَنَهُ
+
+ 
+
+“Allahummajalni minaladziyna yastami’uwnal qowla fayatabi’uwna ahnashu.”
+
+Artinya :
+
+“Ya Allah, jadikanlah aku termasuk orang-orang yang mendengarkan kata dan mengikuti sesuatu yang terbaik.”</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6c-Xx-9Qv">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="9Dp-2y-G41" kind="show" id="ARX-Zh-Ymb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plf-ih-PLd">
+                                <rect key="frame" x="302" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="EFE-Qt-VXs" kind="show" id="bpN-Jg-Pvw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98355984399999996" blue="0.95205866120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="P0y-tT-dz3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJ5-Er-Gu1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="1671"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eg8-zQ-eMe">
+            <objects>
+                <viewController id="EFE-Qt-VXs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WuY-NM-5qY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wudhu-8" translatesAutoresizingMaskIntoConstraints="NO" id="dDM-ju-y8x">
+                                <rect key="frame" x="0.0" y="76" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iIM-L3-P7c">
+                                <rect key="frame" x="16" y="297" width="343" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">8. Mencuci kedua kaki ;
+
+Membasuh kedua kaki dan diusahakan menyeluruh tidak pada bagian depan saja, basuh hingga ke seluruh kaki hingga ke mata kaki.
+
+Kaki kanan
+اَللَّهُمَّ ثَبِّتْ قدَمِي عَلَى الصِّرَاطِ يَوْمَ تَزِلُّ فِيْهِاْ لاَقْدَامِ
+
+“Allahumma tabbatqodamiy a’lasoroti yawmatazilu fiyhil laqdami.”
+
+Artinya :
+
+“Yaa Allah, yaa Tuhanku,tetapkanlah tumuitku diatas titian yang lurus bersama tumit hamba-hamba-Mu yang shaleh.”
+
+Kaki kiri
+اَللّهمَّ اِنِّى اَنْتُجِلَ قَدَمِ عَلَى صِرَاطِ فِى النَّارْ يَوْمَ تِجِلُ اَقْدَمِ المُنَافِقِيْنْ وَ المُشْرِكِينْ
+
+“Allahuma iniyantujila qodamia’la sirotifinari yawmatijilu akdami munafikiyn wamusyrikiyni.”
+
+Artinya :
+
+“Ya Allah yaa Tuhanku,sesungguhnya aku-berlindung kepada-Mu dari keterpelesetan tumuitku dari atas jalan neraka,pada hari dikala terpeleset tumit orang-orang kafir.”</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5p-1z-PHq">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="pVv-vU-ty8" kind="show" id="Aa6-Yf-p6r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iy9-bx-e1y">
+                                <rect key="frame" x="302" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="rcZ-Ok-wt0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98355984399999996" blue="0.95205866120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="djU-GN-7C4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yqE-Sd-k4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1849" y="1653"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WudhuWalpaper" width="322" height="488"/>
+        <image name="wudhu-1" width="247" height="250"/>
+        <image name="wudhu-2" width="249" height="250"/>
+        <image name="wudhu-3" width="250" height="245"/>
+        <image name="wudhu-4" width="245" height="250"/>
+        <image name="wudhu-5" width="246" height="250"/>
+        <image name="wudhu-6" width="245" height="250"/>
+        <image name="wudhu-7" width="245" height="250"/>
+        <image name="wudhu-8" width="245" height="250"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Aa6-Yf-p6r"/>
+        <segue reference="3Xn-ee-l8V"/>
+        <segue reference="ARX-Zh-Ymb"/>
+        <segue reference="qx5-SW-AVJ"/>
+        <segue reference="ES9-wg-yUA"/>
+        <segue reference="ssV-Ya-B98"/>
+        <segue reference="6o2-cL-ccl"/>
+        <segue reference="bjz-PA-Bj8"/>
+    </inferredMetricsTieBreakers>
+</document>
